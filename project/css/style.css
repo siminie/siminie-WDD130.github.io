@@ -1,0 +1,50 @@
+body {
+    font-size: 16px;
+    background-color: #DFAEB4;
+}
+
+header,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #EDD2E0;
+    color: #754F5B;
+    padding: 1em;
+}
+
+main section p {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+nav {
+    background-color: #EDD2E0;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px
+}
+
+nav a:link,
+nav a:visited {
+    color: #754F5B
+}
+
+nav a:hover {
+    color: #DFAEB4;
+    background-color: #EDD2E0
+}
