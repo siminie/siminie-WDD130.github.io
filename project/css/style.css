@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
-    background-color: #DFAEB4;
+    background-color: #E5989B;
+    font-family: 'Lato', 'Times New Roman', 'serif';
 }
 
 header,
@@ -11,40 +12,110 @@ footer {
 }
 
 header {
-    background-color: #EDD2E0;
-    color: #754F5B;
-    padding: 1em;
+    background-color:#241F2D;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    justify-content: space-evenly;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+header>img {
+    width: 100px;
+    height: auto;
+    padding: 0.75em;
+}
+
+h1 {
+    color: whitesmoke;
+    padding: 0rem;
+    font-family: 'EB Garamond', 'Helvetica', 'sans-serif';
+    font-size: 2rem;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0.75rem;
+}
+
+nav>ul>li {
+
+}
+
+nav>ul>li>a {
+    color: whitesmoke;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'EB Garamond', 'Helvetica', 'sans-serif';
+    display: block;
+
+}
+
+nav a:hover{
+    color: #E5989B;
+    background-color:#241F2D;
+
+}
+
+.active {
+    color: #E5989B;
+    border-bottom: 1px solid #E5989B;
+    padding-bottom: 0.75rem;
+}
+
+main,
+footer {
+    background-color: white;
+    padding: 0.75em;
+}
+
+main>img {
+    width: 960px;
+    height: auto;
+    
+}
+
+h2 {
+    font-family: 'EB Garamond', 'Helvetica', 'sans-serif' ;
+    color: #B5838D;
+    padding: 0.25rem;
+    
 }
 
 main section p {
     background-color: white;
-    border: 1px solid black;
-    padding: 5px;
+    text-align: justify;
+    padding: 0.25rem;
+    font-family: 'Lato', 'Times New Roman', 'serif';
+    line-height: 1.5rem;
 }
 
-nav {
-    background-color: #EDD2E0;
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em
+footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-nav>ul {
-    list-style-type: none;
-    display: flex
+.contact {
+    text-align: left;
+    padding: 0.25em;
+
+
 }
 
-nav a {
-    padding: 1em;
-    min-width: 70px
+.social {
+    text-align: right;
+    padding: 0.25rem;
 }
 
-nav a:link,
-nav a:visited {
-    color: #754F5B
-}
+.social img {
+    width: 50px;
+    height: auto;
 
-nav a:hover {
-    color: #DFAEB4;
-    background-color: #EDD2E0
 }
