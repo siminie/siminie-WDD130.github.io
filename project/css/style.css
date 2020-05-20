@@ -96,6 +96,8 @@ main section p {
 }
 
 footer {
+    background-color: #241F2D;
+    color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     display: grid;
