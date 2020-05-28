@@ -128,7 +128,7 @@ body {
     height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px 100px ;
+    grid-template-rows: 100px 100px 100px;
 }
 
 .red4 {
@@ -138,20 +138,16 @@ body {
 
 .green4 {
     background-color: green;
-    grid-column-start: 0;
     grid-column-end: -1;
 }
 
 .gold4 {
     background-color: gold;
-    grid-column-start: 0;
     grid-column-end: -1;
-    
 }
 
 .blue4 {
     background-color: blue;
-    grid-column-start: 0;
     grid-column-end: -1;
 }
 
@@ -175,7 +171,7 @@ body {
     float: left;
     z-index: 1;
     margin: 0 10px 10px 0;
-    background-color:green;
+    background-color: green;
 }
 
 .gold5 {
