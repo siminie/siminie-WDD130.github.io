@@ -12,12 +12,12 @@ footer {
 }
 
 header {
-    background-color:#241F2D;
+    background-color: #241F2D;
     color: white;
     display: flex;
     align-items: center;
     padding: 0.75rem;
-    justify-content: space-evenly;
+    justify-content:space-around;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -25,14 +25,14 @@ header {
 header>img {
     width: 100px;
     height: auto;
-    padding: 0.75em;
+    padding: 0.75rem;
 }
 
 h1 {
     color: whitesmoke;
     padding: 0rem;
     font-family: 'EB Garamond', 'Helvetica', 'sans-serif';
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 nav>ul {
@@ -42,9 +42,7 @@ nav>ul {
     padding: 0.75rem;
 }
 
-nav>ul>li {
-
-}
+nav>ul>li {}
 
 nav>ul>li>a {
     color: whitesmoke;
@@ -56,9 +54,9 @@ nav>ul>li>a {
 
 }
 
-nav a:hover{
+nav a:hover {
     color: #E5989B;
-    background-color:#241F2D;
+    background-color: #241F2D;
 
 }
 
@@ -77,14 +75,14 @@ footer {
 main>img {
     width: 960px;
     height: auto;
-    
+
 }
 
 h2 {
-    font-family: 'EB Garamond', 'Helvetica', 'sans-serif' ;
+    font-family: 'EB Garamond', 'Helvetica', 'sans-serif';
     color: #B5838D;
     padding: 0.25rem;
-    
+
 }
 
 main section p {
@@ -101,6 +99,7 @@ footer {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -125,4 +124,5 @@ footer {
 .copyright {
     text-align: center;
     color: white;
+    grid-column: 1/3;
 }
