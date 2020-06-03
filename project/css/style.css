@@ -17,7 +17,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0.75rem;
-    justify-content:space-around;
+    justify-content: space-around;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -57,10 +57,11 @@ nav>ul>li>a {
 }
 
 nav a:hover {
-    color: #E5989B;
-    background-color: #241F2D;
-
+    color: #241F2D;
+    background-color: #E5989B;
+    border-radius: 5px;
 }
+
 
 .active {
     color: #E5989B;
@@ -77,14 +78,38 @@ footer {
 main>img {
     width: 960px;
     height: auto;
+}
 
+.layout {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 275px 275px 150px;
+    grid-gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.pic1 {
+    grid-column-end: -1;
+}
+
+.pic2 {
+    position: absolute;
+    left: 15px;
+}
+
+.family {
+    grid-column: 1/3;
+    text-align: justify;
+    line-height: 1.5rem;
 }
 
 h2 {
     font-family: 'EB Garamond', 'Helvetica', 'sans-serif';
     color: #B5838D;
     padding: 0.25rem;
-
+    text-align: center;
+    text-decoration: underline;
 }
 
 main section p {
