@@ -258,7 +258,9 @@ main section ul li {
     line-height: 1.5rem;
 }
 
-.pic7, .pic8, .pic9 {
+.pic7,
+.pic8,
+.pic9 {
     width: 95%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -267,12 +269,95 @@ main section ul li {
 
 .container {
     text-align: center;
-    padding: 10px 20px;  
+    padding: 10px 20px;
     margin: auto;
 }
 
-.pic7:hover, .pic8:hover, .pic9:hover {
+.pic7:hover,
+.pic8:hover,
+.pic9:hover {
     transition: transform .8s;
     /* animation */
     transform: scale(1.1)
+}
+
+.layout4 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 1rem;
+    padding: 0.50rem;
+}
+#feedback {
+    font: 1em sans-serif;
+    color: #E5989B;
+    padding: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    /* Center the form on the page */
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 450px;
+    /* Form outline */
+    padding: 1em;
+    border: 3px solid #E5989B;
+    border-radius: 1em;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+form li+li {
+    margin-top: 1em;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 10em;
+}
+
+.button2 {
+    /* Align buttons with the text fields */
+    padding-left: 90px;
+    margin-left: 12em;
 }
