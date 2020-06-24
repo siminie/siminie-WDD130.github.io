@@ -97,7 +97,6 @@ footer {
     text-align: center;
     font-family: 'Lato', 'Times New Roman', 'serif';
     border-radius: 10px;
-    ;
 }
 
 .action button {
@@ -107,12 +106,10 @@ footer {
     font-size: 1.2em;
     border-radius: 30px;
     font-family: 'EB Garamond', 'Helvetica', 'sans-serif';
-
 }
 
 .action button:hover {
     transition: transform .2s;
-    /* animation */
     transform: scale(1.1);
 }
 
@@ -128,7 +125,6 @@ footer {
 .pic1:hover,
 .pic2:hover {
     transition: transform .2s;
-    /* animation */
     transform: scale(1.1);
 }
 
@@ -199,7 +195,7 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-    .______ {
+.______ {
         display: block;
     }
 }
@@ -277,7 +273,6 @@ main section ul li {
 .pic8:hover,
 .pic9:hover {
     transition: transform .8s;
-    /* animation */
     transform: scale(1.1)
 }
 
@@ -292,14 +287,13 @@ main section ul li {
 
 #feedback {
     font: 1em sans-serif;
-    color: #E5989B;
+    color: #241F2D;
     padding: 1em;
     font-weight: bold;
     text-align: center;
 }
 
 form {
-    /* Center the form on the page */
     margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -308,7 +302,6 @@ form {
     padding: 1em;
     border: 3px solid #E5989B;
     border-radius: 1em;
-
 }
 
 form ul {
@@ -323,7 +316,6 @@ form li+li {
 }
 
 label {
-    /* Uniform size & alignment */
     display: inline-block;
     width: 130px;
     text-align: right;
@@ -331,29 +323,19 @@ label {
 
 input,
 textarea {
-    /* To make sure that all text fields have the same font settings
-By default, textareas have a monospace font */
     font: 1em sans-serif;
-
-    /* Uniform text field size */
     width: 300px;
     box-sizing: border-box;
-
-    /* Match form field borders */
     border: 1px solid #999;
 }
 
 input:focus,
 textarea:focus {
-    /* Additional highlight for focused elements */
     border-color: #000;
 }
 
 textarea {
-    /* Align multiline text fields with their labels */
     vertical-align: top;
-
-    /* Provide space to type some text */
     height: 10em;
 }
 
@@ -366,11 +348,9 @@ textarea {
     font-size: 1em;
     border-radius: 30px;
     text-align: center;
-    color: whitesmoke;
 }
 
 .button2 button:hover {
     transition: transform .2s;
-    /* animation */
     transform: scale(1.1);
 }
