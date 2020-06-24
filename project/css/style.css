@@ -289,6 +289,7 @@ main section ul li {
     grid-gap: 1rem;
     padding: 0.50rem;
 }
+
 #feedback {
     font: 1em sans-serif;
     color: #E5989B;
@@ -314,7 +315,7 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    
+
 }
 
 form li+li {
@@ -356,8 +357,20 @@ textarea {
     height: 10em;
 }
 
-.button2 {
-    /* Align buttons with the text fields */
-    padding-left: 90px;
-    margin-left: 12em;
+.button2 button {
+    padding: 4px;
+    margin-left: 10em;
+    line-height: 1em;
+    width: 6em;
+    background-color: #E5989B;
+    font-size: 1em;
+    border-radius: 30px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.button2 button:hover {
+    transition: transform .2s;
+    /* animation */
+    transform: scale(1.1);
 }
