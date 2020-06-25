@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Temple Inn & Suites is a hotel that builds and manages specialized hotel 
-        accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints 
-        around the world. ">
-    <title>"Temple Inn & Suites | Your Home Away From Home | 215-529-9999"</title>
+    <meta name="description"
+        content="The Temple Inn & Suites Reservation page, with reservation information and contact details. Make your reservation with us today!">
+    <title>"Temple Inn & Suites | Make Your Reservation | 215-529-9999"</title>
     <link rel="stylesheet" href="/project/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -115,19 +114,12 @@
         </div>
     </footer>
     <script>
-        // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
-        // get the form element so we can read what was entered in it.
         const formElement = document.forms[0];
-
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function (e) {
-            // stop the form from doing the default action
             e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
             feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
                 '! Your Reservation has been made! We will send you an email with your information soon!';
-            // make the feedback element visible.
             feedbackElement.style.display = "block";
         });
     </script>
