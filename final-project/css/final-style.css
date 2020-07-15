@@ -285,7 +285,7 @@ main section ul li {
 #feedback {
     font: 1em sans-serif;
     color: #241F2D;
-    padding: 1em;
+    padding: 10px;
     font-weight: bold;
     text-align: center;
 }
@@ -297,7 +297,7 @@ form {
     width: 450px;
     /* Form outline */
     padding: 1em;
-    border: 3px solid #E5989B;
+    border: 3px solid #1571C6;
     border-radius: 1em;
 }
 
@@ -324,6 +324,7 @@ textarea {
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #999;
+    padding: 5px;
 }
 
 input:focus,
@@ -341,7 +342,8 @@ textarea {
     margin-left: 9em;
     line-height: 1em;
     width: 6em;
-    background-color: #E5989B;
+    background-color: #df8b3e;
+    opacity: 0.85;
     font-size: 1em;
     border-radius: 30px;
     text-align: center;
