@@ -153,7 +153,7 @@ footer {
 }
 
 .headline h1 {
-    color: #5ea8ee;
+    color: #1571C6;
     padding: 40px 10px 15px 20px;
     font-family: 'Merienda One', 'cursive'; 
     text-align: center;
@@ -167,11 +167,11 @@ footer {
 
 h2 {
     font-family: 'Lora', 'Helvetica', 'sans-serif';
-    color:  #df8b3e;
+    color:  #B35900;
     padding: 0.25rem;
     text-align: center;
     text-decoration: underline;
-    text-shadow: 1px 1px 100px;
+    text-shadow: 10px 1px 100px;
 }
 
 main section p {
