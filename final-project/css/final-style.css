@@ -7,7 +7,7 @@ body {
 header,
 main,
 footer {
-    max-width: 960px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -95,7 +95,7 @@ footer {
 }
 
 .hero {
-    width: 960px;
+    width: 980px;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -153,13 +153,18 @@ footer {
 }
 
 .headline h1 {
-    color: black;
-    padding: 40px;
-    font-family: 'Lora', 'Helvetica', 'sans-serif';
+    color: #5ea8ee;
+    padding: 40px 10px 15px 20px;
+    font-family: 'Merienda One', 'cursive'; 
     text-align: center;
     margin: auto;
-
 }
+
+.headline h1:hover {
+    transition: transform .6s;
+    transform: scale(1.1);
+}
+
 h2 {
     font-family: 'Lora', 'Helvetica', 'sans-serif';
     color:  #df8b3e;
