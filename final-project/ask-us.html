@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simo's Fashion Guide that is avaliable to anyone, esepcially females who are 
-    interested in fashion. Simo's Fashion Guide provides various information on fashion styles, body types and more.">
+    <meta name="description" content="Simo's Fashion Guide contact information page..">
     <title>"Simo's Fashion Guide | Fashion Landing Zone | 909-749-0121"</title>
     <link rel="stylesheet" href="/final-project/css/final-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,19 +17,21 @@
         </div>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="fashion-style.html">Fashion Styles</a></li>
-                <li><a href="body-types.html">Body Types</a></li>
+                <li><a href="body-types.html">Body Shape</a></li>
                 <li><a class="active" href="#">Ask Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="hero">
-            <img class="heroimg" src="/final-project/images/hero-fashion.jpg" width="980" alt="ladies in fashionable clothing">
+            <img class="heroimg" src="/final-project/images/hero-fashion.jpg" width="980"
+                alt="ladies in fashionable clothing">
             <div class="action">
                 <h3>Learn more about us below!</h3>
-                <a href="home.html"><button>Home</button></a>
+                <form style="display: inline;" action="index.html">
+                    <button>Home</button></form>
             </div>
         </div>
 
@@ -40,20 +39,23 @@
 
             <section>
                 <h2>FAQ's</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea architecto recusandae delectus sapiente
-                    minus. Minus dolor cumque vero, soluta quasi quis qui explicabo nam rem veniam corrupti mollitia. At
-                    architecto inventore delectus, dicta, impedit cupiditate amet aspernatur facilis tenetur, maiores
-                    corrupti deleniti reiciendis temporibus dolor explicabo non sint voluptates quae.
-                </p>
+                    <ul>
+                        <li><strong>Is there an Ideal body shape? </strong> No, there isn't. Bodies come in all different
+                            shapes and sizes. That’s part of what makes each of us unique.
+                            It’s important to know that there isn’t an “average” or “typical” body. </li>
+                        <li><strong>Do I need to wear a specific fashion style to fit in?</strong> Nope! When it comes
+                            to fashion you wear what makes you feel comfortable. There is no “ideal style” when it comes
+                            to fashion style. </li>
+                    </ul>
             </section>
             <div id="feedback">
                 <h2>Send us a Message!</h2>
-                <form action="reservations_page.php" method="post" target="_blank"
+                <form action="ask-us.php" method="post" target="_blank"
                     onsubmit="setTimeout(function () { window.location.reload(); }, 10000)">
                     <ul>
                         <li>
                             <label for="name"> Full Name:</label>
-                            <input type="text" id="name" name="user_name">
+                            <input type="text" id="name" name="full_name">
                         </li>
                         <li>
                             <label for="mail">E-mail Address:</label>
@@ -75,12 +77,12 @@
             </div>
             <section>
                 <h2>Contact Information</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat animi nostrum possimus cumque
-                    doloribus
-                    sed ab eum voluptatibus a? Praesentium sequi neque rerum voluptates ullam fugit quo non inventore
-                    impedit aliquam odit, cum soluta maxime. Eius, aspernatur, sed, illum est cupiditate exercitationem
-                    necessitatibus omnis expedita ea tenetur non numquam? Provident?
-                </p>
+                <p> Need some help? Contact us below or send us a message on the side! Don't forget to follow us on
+                    social media for more recent content. </p>
+                    <ul>
+                        <li><strong>Telephone:</strong>📱909-749-0121</li>
+                        <li><strong>Email:</strong>✉info@simofashion.com</li>
+                    </ul>
             </section>
         </div>
     </main>
@@ -105,5 +107,16 @@
                 Simone Leia Joseph </p>
         </div>
     </footer>
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function (e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello ' + formElement.full_name.value +
+                '! Your Message has been made! We will contact you soon!';
+            feedbackElement.style.display = "block";
+        });
+    </script>
 </body>
+
 </html>
